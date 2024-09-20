@@ -15,7 +15,7 @@ export default function Collab() {
           <div className='collab-card' id='geek-room'></div>
           <div className='collab-card' id='coding-ninjas'></div>
           <div className='collab-card' id='pandora'></div>
-          <div className='collab-card' id='crypto-connect'></div>
+{/*           <div className='collab-card' id='crypto-connect'></div> */}
       </div>
     </div>
   );
