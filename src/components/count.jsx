@@ -5,8 +5,8 @@ import 'aos/dist/aos.css';
 
 const Count = () => {
   // Sample counts
-  const memberCount = 1061;
-  const eventCount = 7;
+  const memberCount = 1192;
+  const eventCount = 8;
   const coreCount = 30;
 
   useEffect(() => {
