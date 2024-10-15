@@ -17,8 +17,8 @@ const NAVBAR = () => {
       <button className="value" onClick={()=> alert("Not available right now!")}>
         Registration
       </button>
-      <button className="value" onClick={()=> alert("Not available right now!")}>
-        Core Team
+      <button className="value" >
+        <a href='https://forms.gle/aByuzg78jfjoNmXG7'>Core Team</a>
       </button>
       <button className="value">
         <a href='#event-s'>Events</a>
