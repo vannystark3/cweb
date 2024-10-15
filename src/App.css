@@ -462,17 +462,17 @@ button:focus-visible {
   /* border-top-right-radius: 10px; */
 }
 #first-event{
-  background-image: url("./components/llm.jpg");
+  background-image: url("./components/coderelay.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 #second-event{
-  background-image: url("./components/nasa.jpg");
+  background-image: url("./components/ccube.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 #third-event{
-  background-image: url("./components/ipr.jpg");
+  background-image: url("./components/zinnovatio.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
