@@ -14,17 +14,17 @@ export default function Event() {
             <div className='event-card'>
                 <div className='img-space' id='first-event'>
                 </div>
-                <button><a href='#' onClick={()=>alert("Sorry, The registrations for this event are closed!")}>REGISTERATION CLOSED</a></button>
+                <button><a href='https://unstop.com/o/4zdBnm9?lb=Aexm91xM&utm_medium=Share&utm_source=WhatsApp' >REGISTER</a></button>
             </div>
             <div className='event-card'>
                 <div className='img-space' id='second-event'>
                 </div>
-                <button><a href='#' onClick={()=>alert("Sorry, The registrations for this event are closed!")}>REGISTERATION CLOSED</a></button>
+                <button><a href='https://unstop.com/o/aJQEfLU?lb=7vD4WRl9&utm_medium=Share&utm_source=shortUrl' >REGISTER</a></button>
             </div>
             <div className='event-card'>
                 <div className='img-space' id='third-event'>
                 </div>
-                <button><a href='#' onClick={()=>alert("Sorry, The registrations for this event are closed!")}>REGISTERATION CLOSED</a></button>
+                <button><a href='https://unstop.com/o/y4zYGhK?lb=Eaz0y9gv&utm_medium=Share&utm_source=WhatsApp' >REGISTER</a></button>
             </div>
         </div>
     </div>
