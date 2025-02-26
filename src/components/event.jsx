@@ -9,7 +9,7 @@ export default function Event() {
       }, []);
   return (
     <div className='event-section' >
-        <h2>Events</h2>
+        <h2>Upcoming Events</h2>
         <div className='event-space' data-aos='fade-up' data-aos-duration='2000'>
             <div className='event-card'>
                 <div className='img-space' id='first-event'>
