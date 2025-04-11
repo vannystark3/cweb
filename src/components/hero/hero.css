@@ -1,0 +1,48 @@
+
+/*Landing page*/
+.landing-page {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 0;
+    margin: 0;
+  }
+  .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: black;
+    max-width: 90%;
+    height: 80vh;
+  }
+  .hero-content {
+    max-width: 50%;
+    font-family:Arial, Helvetica, sans-serif;
+    animation: fade-up ease-in-out forwards;
+    animation-duration: 2000ms;
+  }
+  .hero-content h1 {
+    font-size: 4vw;
+    margin-bottom: 20px;
+    color: white;
+  }
+  .hero-content p {
+    font-size: 1.60vw;
+    margin-bottom: 30px;
+  }
+  .cta-button {
+    padding: 15px 30px;
+    background-color: #020710;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    animation: fade-up ease-in-out forwards;
+    animation-duration: 2000ms;
+  }
+  

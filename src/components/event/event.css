@@ -1,0 +1,63 @@
+/* EVENTS */
+.event-section h2 {
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+  }
+  .event-space{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+  .event-card{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    height: 250px;
+    width: 360px;
+    background-color: #020710;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+  }
+  .event-card button{
+    height: 50px;
+    background-color: #020710;
+    /* border-radius: 10px; */
+  }
+  .event-card a{
+    text-decoration: none;
+    color: aliceblue;
+  }
+  .event-card:hover{
+    transform: scale(1.1);
+  }
+  .img-space{
+    width: 360px;
+    height: 200px;
+    background-color: gray;
+    /* border-top-left-radius: 10px; */
+    /* border-top-right-radius: 10px; */
+  }
+  #first-event{
+    background-image: url("../../assets/images/coderelay.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #second-event{
+    background-image: url("../../assets/images/coderelay.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #third-event{
+    background-image: url("../../assets/images/zinnovatio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #event-s{
+    scroll-behavior: smooth;
+  }
+  

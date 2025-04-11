@@ -1,0 +1,21 @@
+ /*Footer*/
+ .footer {
+    background-color: #020710;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  .footer p{
+    margin-bottom: 10px;
+  }
+  .footer .social-links a {
+    margin: 0 10px;
+    color: white;
+    font-size: larger;
+    text-decoration: none;
+    transition: color 1s ease-in-out;
+  }
+  .footer .social-links a :hover{
+    color: gold;
+  }
+  

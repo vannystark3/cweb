@@ -1,0 +1,119 @@
+.navbar{
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(8px);
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    z-index: 10;
+  }
+  .navbar a{
+    text-decoration: none;
+    color: aliceblue;
+  }
+  button {
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
+    transition: border-color 0.25s;
+    vertical-align: baseline;
+  }
+  button:hover {
+    border-bottom-color: #646cff;
+    border-style: outset;
+  }
+  button:focus,
+  button:focus-visible {
+    color: yellow;
+  }
+  .logo-container {
+    position:relative;
+    display: flex; 
+    align-items: center;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    animation: fade-up ease-in-out forwards;
+    animation-duration: 3000ms;
+  }
+  .logo-image {
+    width: 20px; 
+    height: 20px;
+    margin-right: 8px; 
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+  }
+  
+  .arrow {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .arrow.open {
+    transform: rotate(180deg);
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #242424;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    /* transition: max-height 0.3s ease-out, opacity 0.3s ease-out; */
+    border-radius: 10px;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+    max-height: 300px; 
+    opacity: 1;
+    animation: slideDown 0.3s ease-out forwards;
+  }
+  @keyframes slideDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(2px);
+    }
+  }
+  .dropdown-content a {
+    color: whitesmoke;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 10px;
+  }
+  .dropdown-content a:hover {
+    color: gold;
+    background-color: rgba(0,0,0,0.2);
+  }

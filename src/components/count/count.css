@@ -1,0 +1,87 @@
+
+/* count  */
+.count-section{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 4rem 2rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+  }
+  
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 320px;
+    height: 180px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 1px 0 #000;
+    /* For subtle animated gradient border */
+    --border-angle: 0turn; /* For animation */
+    --main-bg: conic-gradient(
+        from var(--border-angle),
+        #213,
+        #112 5%,
+        #112 60%,
+        #213 95%
+      );
+    
+    border: solid 4px transparent;
+    border-radius: 2em;
+    --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #00bfff, #ffffff 99%, transparent);
+    
+    background: 
+      /* padding-box clip this background to the element except the border */
+      var(--main-bg) padding-box,
+      /* border-box extends background to the border */
+      var(--gradient-border) border-box,
+      /* Duplicate main background to fill in behind the gradient border */
+      var(--main-bg) border-box;
+    
+    background-position: center center;
+  
+    /* Animation */
+    animation: bg-spin 10s linear infinite; /* Slower for subtlety */
+  }
+  
+  @keyframes bg-spin {
+    to {
+      --border-angle: 1turn;
+    }
+  }
+  
+  /* Property for smooth animation of custom property */
+  @property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+  }
+  
+  
+  .card div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid #646cff; */
+  }
+  
+  .card span{
+    font-size: 3.5rem;
+  }
+  .card h2{
+    color: gold;
+  }
+  
+ 
+  

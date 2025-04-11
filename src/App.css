@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'customfont';
+  src: url('../soehne-halbfett.c8a8459b.ttf');
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: customfont;
+}
+
+
+
+/*Divider*/
+.divider{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 90%;
+  height: 2px;
+  margin: auto;
+  border-left: none;
+  border-right: none;
+  background-color: #242424;
+}
+
+
+@keyframes fade-up{
+  from{
+    transform: translateY(-20px); 
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+  .count-section{
+    display: flex;
+    flex-direction: column;
+  }
+  .features{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .features-section h2{
+    width: 350px;
+  }
+  .features h3{
+    width: 350px;
+  }
+  .feature p{
+    width: 350px;
+    height: 60px;
+  }
+  .img{
+    width: 300px;
+    height: 165px;
+  }
+  .event-space{
+    flex-direction: column;
+    gap: 30px;
+  }
+  .hero-content{
+    margin-right: 10%;
+  }
+  .cta-button{
+    font-size: small;
+    padding: 10px 10px;
+  }
+  .collab-card{
+    width: 100px;
+    height: 50px;
+    border-radius: 0;
+  }
+}
