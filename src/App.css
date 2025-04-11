@@ -8,6 +8,251 @@
   box-sizing: border-box;
   font-family: customfont;
 }
+<<<<<<< HEAD
+=======
+.navbar{
+  background-color: rgba(255,255,255,0.1);
+  backdrop-filter: blur(8px);
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  padding: 2px;
+  z-index: 10;
+}
+.navbar a{
+  text-decoration: none;
+  color: aliceblue;
+}
+button {
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  background-color: rgba(0,0,0,0);
+  transition: border-color 0.25s;
+  vertical-align: baseline;
+}
+button:hover {
+  border-bottom-color: #646cff;
+  border-style: outset;
+}
+button:focus,
+button:focus-visible {
+  color: yellow;
+}
+.logo-container {
+  position:relative;
+  display: flex; 
+  align-items: center;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  animation: fade-up ease-in-out forwards;
+  animation-duration: 3000ms;
+}
+.logo-image {
+  width: 20px; 
+  height: 20px;
+  margin-right: 8px; 
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  margin-top: 2px;
+}
+
+.arrow {
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+.dropdown-content {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #242424;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  /* transition: max-height 0.3s ease-out, opacity 0.3s ease-out; */
+  border-radius: 10px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  max-height: 300px; 
+  opacity: 1;
+  animation: slideDown 0.3s ease-out forwards;
+}
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(2px);
+  }
+}
+.dropdown-content a {
+  color: whitesmoke;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 10px;
+}
+.dropdown-content a:hover {
+  color: gold;
+  background-color: rgba(0,0,0,0.2);
+}
+
+/*Landing page*/
+.landing-page {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: black;
+  max-width: 90%;
+  height: 80vh;
+}
+.hero-content {
+  max-width: 50%;
+  font-family:Arial, Helvetica, sans-serif;
+  animation: fade-up ease-in-out forwards;
+  animation-duration: 2000ms;
+}
+.hero-content h1 {
+  font-size: 4vw;
+  margin-bottom: 20px;
+  color: white;
+}
+.hero-content p {
+  font-size: 1.60vw;
+  margin-bottom: 30px;
+}
+.cta-button {
+  padding: 15px 30px;
+  background-color: #020710;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  animation: fade-up ease-in-out forwards;
+  animation-duration: 2000ms;
+}
+
+/* about */
+.features-section {
+  text-align: center;
+  padding: 50px;
+  background-color: black;
+}
+.features-section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: whitesmoke;
+}
+.features {
+  display: flex;
+  flex-direction: row;
+}
+.feature {
+  text-align: center;
+  max-width: 30%;
+  margin-right: 4vw;
+}
+.img{
+  background-color: aliceblue;
+  width: 400px;
+  height: 220px;
+  transition: transform 0.3s ease-in-out;
+}
+.img:hover{
+  transform: scale(1.05);
+}
+.coding .img{
+  background-image: url("./components/coding.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+.workshop .img{
+  background-image: url("./components/workshop.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+.hackathon .img{
+  background-image: url("./components/hackathon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+.feature h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: yellow;
+}
+.feature p {
+  font-size: 16px;
+}
+ /*Footer*/
+.footer {
+  background-color: #020710;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.footer p{
+  margin-bottom: 10px;
+}
+.footer .social-links a {
+  margin: 0 10px;
+  color: white;
+  font-size: larger;
+  text-decoration: none;
+  transition: color 1s ease-in-out;
+}
+.footer .social-links a :hover{
+  color: gold;
+}
+>>>>>>> 42d319cd7c608afdd9762480ab33614f41c3eafe
 
 
 
@@ -35,7 +280,212 @@
   }
 }
 
+<<<<<<< HEAD
 
+=======
+/* count  */
+.count-section{
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 4rem 2rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 10px;
+  padding: 20px;
+  width: 320px;
+  height: 180px;
+  text-align: center;
+  color: white;
+  text-shadow: 0 1px 0 #000;
+  /* For subtle animated gradient border */
+  --border-angle: 0turn; /* For animation */
+  --main-bg: conic-gradient(
+      from var(--border-angle),
+      #213,
+      #112 5%,
+      #112 60%,
+      #213 95%
+    );
+  
+  border: solid 4px transparent;
+  border-radius: 2em;
+  --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #00bfff, #ffffff 99%, transparent);
+  
+  background: 
+    /* padding-box clip this background to the element except the border */
+    var(--main-bg) padding-box,
+    /* border-box extends background to the border */
+    var(--gradient-border) border-box,
+    /* Duplicate main background to fill in behind the gradient border */
+    var(--main-bg) border-box;
+  
+  background-position: center center;
+
+  /* Animation */
+  animation: bg-spin 10s linear infinite; /* Slower for subtlety */
+}
+
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+
+/* Property for smooth animation of custom property */
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
+
+.card div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid #646cff; */
+}
+
+.card span{
+  font-size: 3.5rem;
+}
+.card h2{
+  color: gold;
+}
+
+.collab-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden; /* Hide the overflow content */
+}
+
+.collab-section h2 {
+  padding: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.collaborators {
+  display: flex;
+  overflow: hidden; /* Hide the overflowing content */
+  white-space: nowrap; /* Prevent wrapping */
+  width: 100%; /* Make sure it spans full width */
+  padding-bottom: 30px;
+  justify-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.collab-card {
+  margin-left: 20px;
+  height: 100px;
+  border-radius: 20px;
+}
+#geek-room{
+  background-image: url("./components/GeekRoom.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+}
+#coding-ninjas{
+  background-image: url("./components/cn.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+}
+#pandora{
+  background-image: url("./components/pandora.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+}
+#crypto-connect{
+  background-image: url("./components/cn.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+
+}
+
+
+/* EVENTS */
+.event-section h2 {
+  padding: 30px;
+  width: 100%;
+  text-align: center;
+}
+.event-space{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 5%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+.event-card{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  height: 250px;
+  width: 360px;
+  background-color: #020710;
+  border-radius: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+.event-card button{
+  height: 50px;
+  background-color: #020710;
+  /* border-radius: 10px; */
+}
+.event-card a{
+  text-decoration: none;
+  color: aliceblue;
+}
+.event-card:hover{
+  transform: scale(1.1);
+}
+.img-space{
+  width: 360px;
+  height: 200px;
+  background-color: gray;
+  /* border-top-left-radius: 10px; */
+  /* border-top-right-radius: 10px; */
+}
+#first-event{
+  background-image: url("./components/coderelay.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#second-event{
+  background-image: url("./components/ccube.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#third-event{
+  background-image: url("./components/zinnovatio.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#event-s{
+  scroll-behavior: smooth;
+}
+>>>>>>> 42d319cd7c608afdd9762480ab33614f41c3eafe
 
 /* Responsive */
 @media only screen and (max-width: 600px) {
